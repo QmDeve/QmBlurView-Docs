@@ -12,8 +12,10 @@ export default defineConfig({
     ['meta', { name: 'msvalidate.01', content: '3B3196CCE3689B59560B015D922104EE' }],
     ['meta', { name: 'google-site-verification', content: '2hFUKgXRhlWwjVnt_m5PN0IA00LaSYJBs0ZK1RjBzQY' }],
     ['meta', { name: 'baidu-site-verification', content: 'codeva-gAdMnbR875' }],
-    ['script', { async: 'async', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1263219814762561', crossorigin: 'anonymous' }]
+    ['script', { async: 'async', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1263219814762561', crossorigin: 'anonymous' }],
+    ['script', {}, `window["addAds"] = function () {(adsbygoogle = window.adsbygoogle || []).push({});}`],
   ],
+
   appearance: false,
   markdown: {
     config: (md) => {
@@ -21,18 +23,18 @@ export default defineConfig({
       md.renderer.rules.fence = (...args) => {
         const [tokens, idx] = args
         let content = tokens[idx].content
-        
+
         content = content
           .replace(/{{VERSION}}/g, '1.1.4')
           .replace(/{{GROUP_ID}}/g, 'com.qmdeve.blurview')
-        
+
         tokens[idx].content = content
-        
+
         return originalFence ? originalFence(...args) : ''
       }
-      
+
       const originalInline = md.renderer.renderInline
-      md.renderer.renderInline = function(tokens, options, env) {
+      md.renderer.renderInline = function (tokens, options, env) {
         tokens.forEach(token => {
           if (token.content) {
             token.content = token.content
@@ -40,7 +42,7 @@ export default defineConfig({
               .replace(/{{GROUP_ID}}/g, 'com.qmdeve.blurview')
           }
         })
-        
+
         return originalInline.call(this, tokens, options, env)
       }
     },
@@ -195,7 +197,8 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Quick Start', link: '/getting-started' },
-          { text: 'Blur Components',
+          {
+            text: 'Blur Components',
             items: [
               { text: 'BlurView', link: '/quick-start/BlurView.md' },
               { text: 'BlurButtonView', link: '/quick-start/BlurButtonView.md' },
@@ -206,7 +209,8 @@ export default defineConfig({
               { text: 'BlurBottomNavigationView', link: '/quick-start/BlurBottomNavigationView.md' }
             ]
           },
-          { text: 'Blur Transformation',
+          {
+            text: 'Blur Transformation',
             items: [
               { text: 'Glide Integration', link: '/quick-start/blur-transformation/glide-integration.md' },
               { text: 'Picasso Integration', link: '/quick-start/blur-transformation/picasso-integration.md' }
@@ -229,9 +233,10 @@ export default defineConfig({
           { icon: 'telegram', link: 'https://t.me/qmdeve' }
         ],
         nav: [
-          { text: '首页', link: '/zh'},
-          { text: '快速开始', link: '/zh/getting-started'},
-          { text: '模糊组件',
+          { text: '首页', link: '/zh' },
+          { text: '快速开始', link: '/zh/getting-started' },
+          {
+            text: '模糊组件',
             items: [
               { text: 'BlurView', link: '/zh/quick-start/BlurView.md' },
               { text: 'BlurButtonView', link: '/zh/quick-start/BlurButtonView.md' },
@@ -242,7 +247,8 @@ export default defineConfig({
               { text: 'BlurBottomNavigationView', link: '/zh/quick-start/BlurBottomNavigationView.md' }
             ]
           },
-          { text: 'Blur Transformation',
+          {
+            text: 'Blur Transformation',
             items: [
               { text: 'Glide 集成', link: '/zh/quick-start/blur-transformation/glide-integration.md' },
               { text: 'Picasso 集成', link: '/zh/quick-start/blur-transformation/picasso-integration.md' }
@@ -260,9 +266,10 @@ export default defineConfig({
       link: '/ru',
       themeConfig: {
         nav: [
-          { text: 'Домашняя страница', link: '/ru'},
-          { text: 'Начинай быстро', link: '/ru/getting-started'},
-          { text: 'Нечеткие компоненты',
+          { text: 'Домашняя страница', link: '/ru' },
+          { text: 'Начинай быстро', link: '/ru/getting-started' },
+          {
+            text: 'Нечеткие компоненты',
             items: [
               { text: 'BlurView', link: '/ru/quick-start/BlurView.md' },
               { text: 'BlurButtonView', link: '/ru/quick-start/BlurButtonView.md' },
@@ -273,7 +280,8 @@ export default defineConfig({
               { text: 'BlurBottomNavigationView', link: '/ru/quick-start/BlurBottomNavigationView.md' }
             ]
           },
-          { text: 'Blur Transformation',
+          {
+            text: 'Blur Transformation',
             items: [
               { text: 'Интеграция Glide', link: '/ru/quick-start/blur-transformation/glide-integration.md' },
               { text: 'Интеграция Picasso', link: '/ru/quick-start/blur-transformation/picasso-integration.md' }
@@ -291,9 +299,10 @@ export default defineConfig({
       link: '/ja',
       themeConfig: {
         nav: [
-          { text: 'ホーム', link: '/ja'},
-          { text: 'クイックスタート', link: '/ja/getting-started'},
-          { text: 'ブラーコンポーネント',
+          { text: 'ホーム', link: '/ja' },
+          { text: 'クイックスタート', link: '/ja/getting-started' },
+          {
+            text: 'ブラーコンポーネント',
             items: [
               { text: 'BlurView', link: '/ja/quick-start/BlurView.md' },
               { text: 'BlurButtonView', link: '/ja/quick-start/BlurButtonView.md' },
@@ -304,7 +313,8 @@ export default defineConfig({
               { text: 'BlurBottomNavigationView', link: '/ja/quick-start/BlurBottomNavigationView.md' }
             ]
           },
-          { text: 'Blur Transformation',
+          {
+            text: 'Blur Transformation',
             items: [
               { text: 'Glide 統合', link: '/ja/quick-start/blur-transformation/glide-integration.md' },
               { text: 'Picasso 統合', link: '/ja/quick-start/blur-transformation/picasso-integration.md' }
@@ -322,9 +332,10 @@ export default defineConfig({
       link: '/ko',
       themeConfig: {
         nav: [
-          { text: '홈', link: '/ko'},
-          { text: '빠른 시작', link: '/ko/getting-started'},
-          { text: '블러 컴포넌트',
+          { text: '홈', link: '/ko' },
+          { text: '빠른 시작', link: '/ko/getting-started' },
+          {
+            text: '블러 컴포넌트',
             items: [
               { text: 'BlurView', link: '/ko/quick-start/BlurView.md' },
               { text: 'BlurButtonView', link: '/ko/quick-start/BlurButtonView.md' },
@@ -335,7 +346,8 @@ export default defineConfig({
               { text: 'BlurBottomNavigationView', link: '/ko/quick-start/BlurBottomNavigationView.md' }
             ]
           },
-          { text: 'Blur Transformation',
+          {
+            text: 'Blur Transformation',
             items: [
               { text: 'Glide 통합', link: '/ko/quick-start/blur-transformation/glide-integration.md' },
               { text: 'Picasso 통합', link: '/ko/quick-start/blur-transformation/picasso-integration.md' }
@@ -353,9 +365,10 @@ export default defineConfig({
       link: '/fr',
       themeConfig: {
         nav: [
-          { text: 'Accueil', link: '/fr'},
-          { text: 'Démarrage rapide', link: '/fr/getting-started'},
-          { text: 'Composants flous',
+          { text: 'Accueil', link: '/fr' },
+          { text: 'Démarrage rapide', link: '/fr/getting-started' },
+          {
+            text: 'Composants flous',
             items: [
               { text: 'BlurView', link: '/fr/quick-start/BlurView.md' },
               { text: 'BlurButtonView', link: '/fr/quick-start/BlurButtonView.md' },
@@ -366,7 +379,8 @@ export default defineConfig({
               { text: 'BlurBottomNavigationView', link: '/fr/quick-start/BlurBottomNavigationView.md' }
             ]
           },
-          { text: 'Blur Transformation',
+          {
+            text: 'Blur Transformation',
             items: [
               { text: 'Intégration Glide', link: '/fr/quick-start/blur-transformation/glide-integration.md' },
               { text: 'Intégration Picasso', link: '/fr/quick-start/blur-transformation/picasso-integration.md' }
@@ -384,9 +398,10 @@ export default defineConfig({
       link: '/ar',
       themeConfig: {
         nav: [
-          { text: 'الصفحة الرئيسية', link: '/ar'},
-          { text: 'البدء السريع', link: '/ar/getting-started'},
-          { text: 'المكونات غير واضحة',
+          { text: 'الصفحة الرئيسية', link: '/ar' },
+          { text: 'البدء السريع', link: '/ar/getting-started' },
+          {
+            text: 'المكونات غير واضحة',
             items: [
               { text: 'BlurView', link: '/ar/quick-start/BlurView.md' },
               { text: 'BlurButtonView', link: '/ar/quick-start/BlurButtonView.md' },
@@ -397,7 +412,8 @@ export default defineConfig({
               { text: 'BlurBottomNavigationView', link: '/ar/quick-start/BlurBottomNavigationView.md' }
             ]
           },
-          { text: 'Blur Transformation',
+          {
+            text: 'Blur Transformation',
             items: [
               { text: 'دمج Glide', link: '/ar/quick-start/blur-transformation/glide-integration.md' },
               { text: 'دمج Picasso', link: '/ar/quick-start/blur-transformation/picasso-integration.md' }
