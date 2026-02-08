@@ -9,10 +9,10 @@ hero:
     alt: QmBlurView Logo
   actions:
     - theme: mimicry-brand
-      text: Quick Start
-      link: /getting-started
+      text: Get Started
+      link: ./guide/overview
     - theme: mimicry
-      text: GitHub
+      text: View on GitHub
       link: https://github.com/QmDeve/QmBlurView
     - theme: mimicry
       text: Download Demo

@@ -196,27 +196,28 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Quick Start', link: '/getting-started' },
+          { text: 'Overview', link: '/guide/overview' },
+          { text: 'Getting Started', link: '/guide/getting-started' },
           {
             text: 'Blur Components',
             items: [
-              { text: 'BlurView', link: '/quick-start/BlurView.md' },
-              { text: 'BlurButtonView', link: '/quick-start/BlurButtonView.md' },
-              { text: 'ProgressiveBlurView', link: '/quick-start/ProgressiveBlurView.md' },
-              { text: 'BlurTitlebarView', link: '/quick-start/BlurTitlebarView.md' },
-              { text: 'BlurSwitchButtonView', link: '/quick-start/BlurSwitchButtonView.md' },
-              { text: 'BlurFloatingButtonView', link: '/quick-start/BlurFloatingButtonView.md' },
-              { text: 'BlurBottomNavigationView', link: '/quick-start/BlurBottomNavigationView.md' }
+              { text: 'BlurView', link: '/guide/component/BlurView' },
+              { text: 'BlurButtonView', link: '/guide/component/BlurButtonView' },
+              { text: 'ProgressiveBlurView', link: '/guide/component/ProgressiveBlurView' },
+              { text: 'BlurTitlebarView', link: '/guide/component/BlurTitlebarView' },
+              { text: 'BlurSwitchButtonView', link: '/guide/component/BlurSwitchButtonView' },
+              { text: 'BlurFloatingButtonView', link: '/guide/component/BlurFloatingButtonView' },
+              { text: 'BlurBottomNavigationView', link: '/guide/component/BlurBottomNavigationView' }
             ]
           },
           {
             text: 'Blur Transformation',
             items: [
-              { text: 'Glide Integration', link: '/quick-start/blur-transformation/glide-integration.md' },
-              { text: 'Picasso Integration', link: '/quick-start/blur-transformation/picasso-integration.md' }
+              { text: 'Glide Integration', link: '/guide/transformation/glide' },
+              { text: 'Picasso Integration', link: '/guide/transformation/picasso' }
             ]
           },
-          { text: 'Update Log', link: '/update-log.md' }
+          { text: 'Update Log', link: '/update-log' }
         ]
       }
     },
@@ -234,24 +235,25 @@ export default defineConfig({
         ],
         nav: [
           { text: '首页', link: '/zh' },
-          { text: '快速开始', link: '/zh/getting-started' },
+          { text: '概览', link: '/zh/guide/overview' },
+          { text: '快速开始', link: '/zh/guide/getting-started' },
           {
             text: '模糊组件',
             items: [
-              { text: 'BlurView', link: '/zh/quick-start/BlurView.md' },
-              { text: 'BlurButtonView', link: '/zh/quick-start/BlurButtonView.md' },
-              { text: 'ProgressiveBlurView', link: '/zh/quick-start/ProgressiveBlurView.md' },
-              { text: 'BlurTitlebarView', link: '/zh/quick-start/BlurTitlebarView.md' },
-              { text: 'BlurSwitchButtonView', link: '/zh/quick-start/BlurSwitchButtonView.md' },
-              { text: 'BlurFloatingButtonView', link: '/zh/quick-start/BlurFloatingButtonView.md' },
-              { text: 'BlurBottomNavigationView', link: '/zh/quick-start/BlurBottomNavigationView.md' }
+              { text: 'BlurView', link: '/zh/guide/component/BlurView' },
+              { text: 'BlurButtonView', link: '/zh/guide/component/BlurButtonView' },
+              { text: 'ProgressiveBlurView', link: '/zh/guide/component/ProgressiveBlurView' },
+              { text: 'BlurTitlebarView', link: '/zh/guide/component/BlurTitlebarView' },
+              { text: 'BlurSwitchButtonView', link: '/zh/guide/component/BlurSwitchButtonView' },
+              { text: 'BlurFloatingButtonView', link: '/zh/guide/component/BlurFloatingButtonView' },
+              { text: 'BlurBottomNavigationView', link: '/zh/guide/component/BlurBottomNavigationView' }
             ]
           },
           {
             text: 'Blur Transformation',
             items: [
-              { text: 'Glide 集成', link: '/zh/quick-start/blur-transformation/glide-integration.md' },
-              { text: 'Picasso 集成', link: '/zh/quick-start/blur-transformation/picasso-integration.md' }
+              { text: 'Glide 集成', link: '/zh/guide/transformation/glide' },
+              { text: 'Picasso 集成', link: '/zh/guide/transformation/picasso' }
             ]
           },
           { text: '更新日志', link: '/update-log.md' },
@@ -268,24 +270,25 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Домашняя страница', link: '/ru' },
-          { text: 'Начинай быстро', link: '/ru/getting-started' },
+          { text: 'Обзор', link: '/ru/guide/overview' },
+          { text: 'Начинай быстро', link: '/ru/guide/getting-started' },
           {
             text: 'Нечеткие компоненты',
             items: [
-              { text: 'BlurView', link: '/ru/quick-start/BlurView.md' },
-              { text: 'BlurButtonView', link: '/ru/quick-start/BlurButtonView.md' },
-              { text: 'ProgressiveBlurView', link: '/ru/quick-start/ProgressiveBlurView.md' },
-              { text: 'BlurTitlebarView', link: '/ru/quick-start/BlurTitlebarView.md' },
-              { text: 'BlurSwitchButtonView', link: '/ru/quick-start/BlurSwitchButtonView.md' },
-              { text: 'BlurFloatingButtonView', link: '/ru/quick-start/BlurFloatingButtonView.md' },
-              { text: 'BlurBottomNavigationView', link: '/ru/quick-start/BlurBottomNavigationView.md' }
+              { text: 'BlurView', link: '/ru/guide/component/BlurView' },
+              { text: 'BlurButtonView', link: '/ru/guide/component/BlurButtonView' },
+              { text: 'ProgressiveBlurView', link: '/ru/guide/component/ProgressiveBlurView' },
+              { text: 'BlurTitlebarView', link: '/ru/guide/component/BlurTitlebarView' },
+              { text: 'BlurSwitchButtonView', link: '/ru/guide/component/BlurSwitchButtonView' },
+              { text: 'BlurFloatingButtonView', link: '/ru/guide/component/BlurFloatingButtonView' },
+              { text: 'BlurBottomNavigationView', link: '/ru/guide/component/BlurBottomNavigationView' }
             ]
           },
           {
             text: 'Blur Transformation',
             items: [
-              { text: 'Интеграция Glide', link: '/ru/quick-start/blur-transformation/glide-integration.md' },
-              { text: 'Интеграция Picasso', link: '/ru/quick-start/blur-transformation/picasso-integration.md' }
+              { text: 'Интеграция Glide', link: '/ru/guide/transformation/glide' },
+              { text: 'Интеграция Picasso', link: '/ru/guide/transformation/picasso' }
             ]
           },
           { text: 'Инструкции по обновлению', link: '/update-log.md' }
@@ -301,24 +304,25 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/ja' },
-          { text: 'クイックスタート', link: '/ja/getting-started' },
+          { text: '概要', link: '/ja/guide/overview' },
+          { text: 'クイックスタート', link: '/ja/guide/getting-started' },
           {
             text: 'ブラーコンポーネント',
             items: [
-              { text: 'BlurView', link: '/ja/quick-start/BlurView.md' },
-              { text: 'BlurButtonView', link: '/ja/quick-start/BlurButtonView.md' },
-              { text: 'ProgressiveBlurView', link: '/ja/quick-start/ProgressiveBlurView.md' },
-              { text: 'BlurTitlebarView', link: '/ja/quick-start/BlurTitlebarView.md' },
-              { text: 'BlurSwitchButtonView', link: '/ja/quick-start/BlurSwitchButtonView.md' },
-              { text: 'BlurFloatingButtonView', link: '/ja/quick-start/BlurFloatingButtonView.md' },
-              { text: 'BlurBottomNavigationView', link: '/ja/quick-start/BlurBottomNavigationView.md' }
+              { text: 'BlurView', link: '/ja/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/ja/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/ja/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/ja/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/ja/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/ja/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/ja/guide/component/BlurBottomNavigationView.md' }
             ]
           },
           {
             text: 'Blur Transformation',
             items: [
-              { text: 'Glide 統合', link: '/ja/quick-start/blur-transformation/glide-integration.md' },
-              { text: 'Picasso 統合', link: '/ja/quick-start/blur-transformation/picasso-integration.md' }
+              { text: 'Glide 統合', link: '/ja/guide/transformation/glide.md' },
+              { text: 'Picasso 統合', link: '/ja/guide/transformation/picasso.md' }
             ]
           },
           { text: '更新ログ', link: '/update-log.md' }
@@ -334,24 +338,25 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '홈', link: '/ko' },
-          { text: '빠른 시작', link: '/ko/getting-started' },
+          { text: '개요', link: '/ko/guide/overview' },
+          { text: '빠른 시작', link: '/ko/guide/getting-started' },
           {
             text: '블러 컴포넌트',
             items: [
-              { text: 'BlurView', link: '/ko/quick-start/BlurView.md' },
-              { text: 'BlurButtonView', link: '/ko/quick-start/BlurButtonView.md' },
-              { text: 'ProgressiveBlurView', link: '/ko/quick-start/ProgressiveBlurView.md' },
-              { text: 'BlurTitlebarView', link: '/ko/quick-start/BlurTitlebarView.md' },
-              { text: 'BlurSwitchButtonView', link: '/ko/quick-start/BlurSwitchButtonView.md' },
-              { text: 'BlurFloatingButtonView', link: '/ko/quick-start/BlurFloatingButtonView.md' },
-              { text: 'BlurBottomNavigationView', link: '/ko/quick-start/BlurBottomNavigationView.md' }
+              { text: 'BlurView', link: '/ko/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/ko/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/ko/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/ko/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/ko/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/ko/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/ko/guide/component/BlurBottomNavigationView.md' }
             ]
           },
           {
             text: 'Blur Transformation',
             items: [
-              { text: 'Glide 통합', link: '/ko/quick-start/blur-transformation/glide-integration.md' },
-              { text: 'Picasso 통합', link: '/ko/quick-start/blur-transformation/picasso-integration.md' }
+              { text: 'Glide 통합', link: '/ko/guide/transformation/glide.md' },
+              { text: 'Picasso 통합', link: '/ko/guide/transformation/picasso.md' }
             ]
           },
           { text: '업데이트 로그', link: '/update-log.md' }
@@ -367,24 +372,25 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Accueil', link: '/fr' },
-          { text: 'Démarrage rapide', link: '/fr/getting-started' },
+          { text: 'Vue d\'ensemble', link: '/fr/guide/overview' },
+          { text: 'Démarrage rapide', link: '/fr/guide/getting-started' },
           {
             text: 'Composants flous',
             items: [
-              { text: 'BlurView', link: '/fr/quick-start/BlurView.md' },
-              { text: 'BlurButtonView', link: '/fr/quick-start/BlurButtonView.md' },
-              { text: 'ProgressiveBlurView', link: '/fr/quick-start/ProgressiveBlurView.md' },
-              { text: 'BlurTitlebarView', link: '/fr/quick-start/BlurTitlebarView.md' },
-              { text: 'BlurSwitchButtonView', link: '/fr/quick-start/BlurSwitchButtonView.md' },
-              { text: 'BlurFloatingButtonView', link: '/fr/quick-start/BlurFloatingButtonView.md' },
-              { text: 'BlurBottomNavigationView', link: '/fr/quick-start/BlurBottomNavigationView.md' }
+              { text: 'BlurView', link: '/fr/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/fr/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/fr/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/fr/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/fr/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/fr/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/fr/guide/component/BlurBottomNavigationView.md' }
             ]
           },
           {
             text: 'Blur Transformation',
             items: [
-              { text: 'Intégration Glide', link: '/fr/quick-start/blur-transformation/glide-integration.md' },
-              { text: 'Intégration Picasso', link: '/fr/quick-start/blur-transformation/picasso-integration.md' }
+              { text: 'Intégration Glide', link: '/fr/guide/transformation/glide.md' },
+              { text: 'Intégration Picasso', link: '/fr/guide/transformation/picasso.md' }
             ]
           },
           { text: 'Journal des mises à jour', link: '/update-log.md' }
@@ -404,20 +410,20 @@ export default defineConfig({
           {
             text: 'المكونات غير واضحة',
             items: [
-              { text: 'BlurView', link: '/ar/quick-start/BlurView.md' },
-              { text: 'BlurButtonView', link: '/ar/quick-start/BlurButtonView.md' },
-              { text: 'ProgressiveBlurView', link: '/ar/quick-start/ProgressiveBlurView.md' },
-              { text: 'BlurTitlebarView', link: '/ar/quick-start/BlurTitlebarView.md' },
-              { text: 'BlurSwitchButtonView', link: '/ar/quick-start/BlurSwitchButtonView.md' },
-              { text: 'BlurFloatingButtonView', link: '/ar/quick-start/BlurFloatingButtonView.md' },
-              { text: 'BlurBottomNavigationView', link: '/ar/quick-start/BlurBottomNavigationView.md' }
+              { text: 'BlurView', link: '/ar/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/ar/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/ar/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/ar/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/ar/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/ar/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/ar/guide/component/BlurBottomNavigationView.md' }
             ]
           },
           {
             text: 'Blur Transformation',
             items: [
-              { text: 'دمج Glide', link: '/ar/quick-start/blur-transformation/glide-integration.md' },
-              { text: 'دمج Picasso', link: '/ar/quick-start/blur-transformation/picasso-integration.md' }
+              { text: 'دمج Glide', link: '/ar/guide/transformation/glide.md' },
+              { text: 'دمج Picasso', link: '/ar/guide/transformation/picasso.md' }
             ]
           },
           { text: 'سجل التحديث', link: '/update-log.md' }

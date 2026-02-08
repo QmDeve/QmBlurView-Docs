@@ -10,9 +10,9 @@ hero:
   actions:
     - theme: mimicry-brand
       text: 빠른 시작
-      link: /ko/getting-started
+      link: ./guide/overview
     - theme: mimicry
-      text: GitHub
+      text: View on GitHub
       link: https://github.com/QmDeve/QmBlurView
     - theme: mimicry
       text: 데모 다운로드

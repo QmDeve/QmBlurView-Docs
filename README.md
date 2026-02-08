@@ -4,7 +4,7 @@
 
 To view the document, please visit:
 - [English Version](https://blurview.qmdeve.com)
-- [中文版本](https://blurview.qmdeve.com/zh/)
+- [简体中文](https://blurview.qmdeve.com/zh/)
 - [日本語バージョン](https://blurview.qmdeve.com/ja/)
 - [Русская версия](https://blurview.qmdeve.com/ru/)
 - [الإصدار العربي](https://blurview.qmdeve.com/ar/)
