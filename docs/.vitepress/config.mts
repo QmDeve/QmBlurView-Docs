@@ -167,6 +167,86 @@ export default defineConfig({
                 }
               }
             }
+          },
+          hi: {
+            translations: {
+              button: {
+                buttonText: 'दस्तावेज़ खोजें',
+                buttonAriaLabel: 'दस्तावेज़ खोजें'
+              },
+              modal: {
+                noResultsText: 'कोई परिणाम नहीं मिला',
+                resetButtonTitle: 'क्वेरी साफ़ करें',
+                footer: {
+                  selectText: 'चुनें',
+                  navigateText: 'नेविगेट करें'
+                }
+              }
+            }
+          },
+          es: {
+            translations: {
+              button: {
+                buttonText: 'Buscar en los documentos',
+                buttonAriaLabel: 'Buscar en los documentos'
+              },
+              modal: {
+                noResultsText: 'No se han encontrado resultados',
+                resetButtonTitle: 'Borrar consulta',
+                footer: {
+                  selectText: 'Seleccionar',
+                  navigateText: 'Navegar'
+                }
+              }
+            }
+          },
+          pt: {
+            translations: {
+              button: {
+                buttonText: 'Pesquisar nos documentos',
+                buttonAriaLabel: 'Pesquisar nos documentos'
+              },
+              modal: {
+                noResultsText: 'Nenhum resultado encontrado',
+                resetButtonTitle: 'Limpar consulta',
+                footer: {
+                  selectText: 'Selecionar',
+                  navigateText: 'Navegar'
+                }
+              }
+            }
+          },
+          vi: {
+            translations: {
+              button: {
+                buttonText: 'Tìm kiếm Tài liệu',
+                buttonAriaLabel: 'Tìm kiếm Tài liệu'
+              },
+              modal: {
+                noResultsText: 'Không tìm thấy kết quả',
+                resetButtonTitle: 'Xóa truy vấn',
+                footer: {
+                  selectText: 'Chọn',
+                  navigateText: 'Điều hướng'
+                }
+              }
+            }
+          },
+          th: {
+            translations: {
+              button: {
+                buttonText: 'ค้นหาเอกสาร',
+                buttonAriaLabel: 'ค้นหาเอกสาร'
+              },
+              modal: {
+                noResultsText: 'ไม่พบผลลัพธ์',
+                resetButtonTitle: 'ล้างคำค้นหา',
+                footer: {
+                  selectText: 'เลือก',
+                  navigateText: 'นำทาง'
+                }
+              }
+            }
           }
         }
       }
@@ -403,6 +483,7 @@ export default defineConfig({
       label: 'العربية',
       lang: 'ar',
       link: '/ar',
+      dir: 'rtl',
       themeConfig: {
         nav: [
           { text: 'الصفحة الرئيسية', link: '/ar' },
@@ -427,6 +508,176 @@ export default defineConfig({
             ]
           },
           { text: 'سجل التحديث', link: '/update-log.md' }
+        ]
+      }
+    },
+    hi: {
+      title: 'QmBlurView',
+      titleTemplate: 'Android के लिए Gaussian Blur कंपोनेंट लाइब्रेरी',
+      label: 'हिन्दी',
+      lang: 'hi',
+      link: '/hi',
+      themeConfig: {
+        nav: [
+          { text: 'होमपेज', link: '/hi' },
+          { text: 'अवलोकन', link: '/hi/guide/overview' },
+          { text: 'शीघ्र आरंभ करें', link: '/hi/guide/getting-started' },
+          {
+            text: 'ब्लर घटक',
+            items: [
+              { text: 'BlurView', link: '/hi/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/hi/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/hi/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/hi/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/hi/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/hi/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/hi/guide/component/BlurBottomNavigationView.md' }
+            ]
+          },
+          {
+            text: 'ब्लर ट्रांसफॉर्मेशन',
+            items: [
+              { text: 'Glide एकीकरण', link: '/hi/guide/transformation/glide.md' },
+              { text: 'Picasso एकीकरण', link: '/hi/guide/transformation/picasso.md' }
+            ]
+          },
+          { text: 'अपडेट लॉग', link: '/update-log.md' }
+        ]
+      }
+    },
+    es: {
+      title: 'QmBlurView',
+      titleTemplate: 'Biblioteca de componentes Gaussian Blur para Android',
+      label: 'Español',
+      lang: 'es',
+      link: '/es',
+      themeConfig: {
+        nav: [
+          { text: 'Inicio', link: '/es' },
+          { text: 'Descripción general', link: '/es/guide/overview' },
+          { text: 'Comenzando', link: '/es/guide/getting-started' },
+          {
+            text: 'Componentes de desenfoque',
+            items: [
+              { text: 'BlurView', link: '/es/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/es/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/es/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/es/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/es/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/es/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/es/guide/component/BlurBottomNavigationView.md' }
+            ]
+          },
+          {
+            text: 'Transformación de desenfoque',
+            items: [
+              { text: 'Integración Glide', link: '/es/guide/transformation/glide.md' },
+              { text: 'Integración Picasso', link: '/es/guide/transformation/picasso.md' }
+            ]
+          },
+          { text: 'Registro de actualizaciones', link: '/update-log.md' }
+        ]
+      }
+    },
+    pt: {
+      title: 'QmBlurView',
+      titleTemplate: 'Biblioteca de Componentes Gaussian Blur para Android',
+      label: 'Português',
+      lang: 'pt',
+      link: '/pt',
+      themeConfig: {
+        nav: [
+          { text: 'Início', link: '/pt' },
+          { text: 'Visão geral', link: '/pt/guide/overview' },
+          { text: 'Primeiros passos', link: '/pt/guide/getting-started' },
+          {
+            text: 'Componentes de desfoque',
+            items: [
+              { text: 'BlurView', link: '/pt/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/pt/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/pt/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/pt/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/pt/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/pt/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/pt/guide/component/BlurBottomNavigationView.md' }
+            ]
+          },
+          {
+            text: 'Transformação de desfoque',
+            items: [
+              { text: 'Integração Glide', link: '/pt/guide/transformation/glide.md' },
+              { text: 'Integração Picasso', link: '/pt/guide/transformation/picasso.md' }
+            ]
+          },
+          { text: 'Registro de atualizações', link: '/update-log.md' }
+        ]
+      }
+    },
+    vi: {
+      title: 'QmBlurView',
+      titleTemplate: 'Thư viện thành phần Gaussian Blur cho Android',
+      label: 'Tiếng Việt',
+      lang: 'vi',
+      link: '/vi',
+      themeConfig: {
+        nav: [
+          { text: 'Trang chủ', link: '/vi' },
+          { text: 'Tổng quan', link: '/vi/guide/overview' },
+          { text: 'Bắt đầu nhanh', link: '/vi/guide/getting-started' },
+          {
+            text: 'Các thành phần mờ',
+            items: [
+              { text: 'BlurView', link: '/vi/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/vi/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/vi/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/vi/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/vi/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/vi/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/vi/guide/component/BlurBottomNavigationView.md' }
+            ]
+          },
+          {
+            text: 'Biến đổi mờ',
+            items: [
+              { text: 'Tích hợp Glide', link: '/vi/guide/transformation/glide.md' },
+              { text: 'Tích hợp Picasso', link: '/vi/guide/transformation/picasso.md' }
+            ]
+          },
+          { text: 'Nhật ký cập nhật', link: '/update-log.md' }
+        ]
+      }
+    },
+    th: {
+      title: 'QmBlurView',
+      titleTemplate: 'ไลบรารีคอมโพเนนต์ Gaussian Blur สำหรับ Android',
+      label: 'ภาษาไทย',
+      lang: 'th',
+      link: '/th',
+      themeConfig: {
+        nav: [
+          { text: 'หน้าแรก', link: '/th' },
+          { text: 'ภาพรวม', link: '/th/guide/overview' },
+          { text: 'เริ่มต้นอย่างรวดเร็ว', link: '/th/guide/getting-started' },
+          {
+            text: 'คอมโพเนนต์เบลอ',
+            items: [
+              { text: 'BlurView', link: '/th/guide/component/BlurView.md' },
+              { text: 'BlurButtonView', link: '/th/guide/component/BlurButtonView.md' },
+              { text: 'ProgressiveBlurView', link: '/th/guide/component/ProgressiveBlurView.md' },
+              { text: 'BlurTitlebarView', link: '/th/guide/component/BlurTitlebarView.md' },
+              { text: 'BlurSwitchButtonView', link: '/th/guide/component/BlurSwitchButtonView.md' },
+              { text: 'BlurFloatingButtonView', link: '/th/guide/component/BlurFloatingButtonView.md' },
+              { text: 'BlurBottomNavigationView', link: '/th/guide/component/BlurBottomNavigationView.md' }
+            ]
+          },
+          {
+            text: 'การแปลงเบลอ',
+            items: [
+              { text: 'การผสานรวม Glide', link: '/th/guide/transformation/glide.md' },
+              { text: 'การผสานรวม Picasso', link: '/th/guide/transformation/picasso.md' }
+            ]
+          },
+          { text: 'บันทึกการอัปเดต', link: '/update-log.md' }
         ]
       }
     }
