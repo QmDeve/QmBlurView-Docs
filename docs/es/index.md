@@ -40,8 +40,7 @@ const members = [
     links: [
       { icon: 'github', link: 'https://github.com/QmDeve' },
       { icon: 'gmail', link: 'mailto:donny@qmdeve.com' },
-      { icon: 'telegram', link: 'https://t.me/donny_yale' },
-      { icon: 'twitter', link: 'https://x.com/qmdeve' }
+      { icon: 'telegram', link: 'https://t.me/donny_yale' }
     ]
   },
   {
@@ -60,12 +59,6 @@ const projects = [
     description: 'Android imitation of iOS 26 liquid glass effect, AndroidLiquidGlassView library has real refraction and dispersion effect',
     link: 'https://liquidglass.qmdeve.com',
     tags: ['Android Lib', 'LiquidGlass', 'iOS 26']
-  },
-  {
-    title: 'Qm Authenticator',
-    description: 'An open-source, secure, offline two-factor authentication (2FA) application developed for Android. It helps you add an extra layer of security to your online account',
-    link: 'https://github.com/Rouneant/Qm-Authenticator-for-Android',
-    tags: ['Android', 'Security', 'Material Design 3']
   }
 ]
 </script>

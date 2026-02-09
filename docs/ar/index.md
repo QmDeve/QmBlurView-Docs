@@ -40,8 +40,7 @@ const members = [
     links: [
       { icon: 'github', link: 'https://github.com/QmDeve' },
       { icon: 'gmail', link: 'mailto:donny@qmdeve.com' },
-      { icon: 'telegram', link: 'https://t.me/donny_yale' },
-      { icon: 'twitter', link: 'https://x.com/qmdeve' }
+      { icon: 'telegram', link: 'https://t.me/donny_yale' }
     ]
   },
   {
@@ -60,12 +59,6 @@ const projects = [
     description: 'تقليد Android لتأثير زجاج سائل iOS 26، مكتبة AndroidLiquidGlassView لها تأثير انكسار وتشتت حقيقي',
     link: 'https://liquidglass.qmdeve.com',
     tags: ['Android Lib', 'LiquidGlass', 'iOS 26']
-  },
-  {
-    title: 'Qm Authenticator',
-    description: 'تطبيق مصادقة ثنائية العوامل (2FA) مفتوح المصدر، آمن، غير متصل بالإنترنت طورته لـ Android. يساعدك على إضافة طبقة أمان إضافية إلى حسابك عبر الإنترنت',
-    link: 'https://github.com/Rouneant/Qm-Authenticator-for-Android',
-    tags: ['Android', 'Security', 'Material Design 3']
   }
 ]
 </script>

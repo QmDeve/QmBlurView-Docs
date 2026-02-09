@@ -11,13 +11,13 @@ next:
 The library is built with performance in mind, utilizing native C++ code to ensure efficient processing of blur effects without compromising on speed or responsiveness. With a range of customizable options, you can easily tailor the blur effects to fit your application's design and user experience needs.
 
 ## Preview
-|                                BlurView                                |                              BlurButtonView                              |                                ProgressiveBlurView                                |
-|:----------------------------------------------------------------------:|:------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|
-| <img src="https://cloud.qmdeve.com/f/eqsn/BlurView.jpeg" alt="Image" style="border-radius: 8px;" /> | <img src="https://cloud.qmdeve.com/f/YyT3/BlurButton.jpeg" alt="Image" style="border-radius: 14px;" /> | <img src="https://cloud.qmdeve.com/f/xYug/ProgressiveBlurView.jpeg" alt="Image" style="border-radius: 10px;" /> |
+|             BlurView                 |                BlurButtonView               |         BlurTitleBarView           |
+|:--------------------------------------:|:-------------------------------------------------:|:-----------------------------------------------:|
+| <img src="/img/BlurView.jpg" alt="Image" style="border-radius: 12px;" /> | <img src="/img/BlurButton.jpg" alt="Image" style="border-radius: 14px;" /> | <img src="/img/BlurTitlebarView.jpg" alt="Image" style="border-radius: 14px;" /> |
 
-|                                BlurTitleBarView                                |                                BlurSwitchButtonView                                 |                              BlurBottomNavigationView                              |
-|:------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|
-| <img src="https://cloud.qmdeve.com/f/Rbhn/BlurTitlebarView.jpeg" alt="Image" style="border-radius: 14px;" /> | <img src="https://cloud.qmdeve.com/f/3Nfl/BlurSwitchButton_true.jpeg" alt="Image" style="border-radius: 14px;" /> | <img src="https://cloud.qmdeve.com/f/gecr/BlurBottomNavigation.jpeg" alt="Image" style="border-radius: 10px;" /> |
+|            ProgressiveBlurView       |             BlurSwitchButtonView           |          BlurBottomNavigationView                 |
+|:-------------------------------:|:--------------------------------------------:|:---------------------------------------:|
+| <img src="/img/ProgressiveBlurView.jpg" alt="Image" style="border-radius: 10px;" /> | <img src="/img/BlurSwitchButton_true.jpg" alt="Image" style="border-radius: 14px;" /> | <img src="/img/BlurBottomNavigation.jpg" alt="Image" style="border-radius: 10px;" /> |
 
 ::: tip
 Just want to try it out? Go to [Getting Started](./getting-started.md).

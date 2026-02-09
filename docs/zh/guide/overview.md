@@ -11,13 +11,13 @@ next:
 该库以性能为核心，利用本地 C++ 代码确保高效处理模糊效果，同时不影响速度或响应能力。通过一系列可定制的选项，您可以轻松调整模糊效果以适应您的应用程序的设计和用户体验需求。
 
 ## 预览
-|                                BlurView                                |                              BlurButtonView                              |                                ProgressiveBlurView                                |
-|:----------------------------------------------------------------------:|:------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|
-| <img src="https://cloud.qmdeve.com/f/eqsn/BlurView.jpeg" alt="Image" style="border-radius: 8px;" /> | <img src="https://cloud.qmdeve.com/f/YyT3/BlurButton.jpeg" alt="Image" style="border-radius: 14px;" /> | <img src="https://cloud.qmdeve.com/f/xYug/ProgressiveBlurView.jpeg" alt="Image" style="border-radius: 10px;" /> |
+|             BlurView                 |                BlurButtonView               |         BlurTitleBarView           |
+|:--------------------------------------:|:-------------------------------------------------:|:-----------------------------------------------:|
+| <img src="/img/BlurView.jpg" alt="Image" style="border-radius: 12px;" /> | <img src="/img/BlurButton.jpg" alt="Image" style="border-radius: 14px;" /> | <img src="/img/BlurTitlebarView.jpg" alt="Image" style="border-radius: 14px;" /> |
 
-|                                BlurTitleBarView                                |                                BlurSwitchButtonView                                 |                              BlurBottomNavigationView                              |
-|:------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|
-| <img src="https://cloud.qmdeve.com/f/Rbhn/BlurTitlebarView.jpeg" alt="Image" style="border-radius: 14px;" /> | <img src="https://cloud.qmdeve.com/f/3Nfl/BlurSwitchButton_true.jpeg" alt="Image" style="border-radius: 14px;" /> | <img src="https://cloud.qmdeve.com/f/gecr/BlurBottomNavigation.jpeg" alt="Image" style="border-radius: 10px;" /> |
+|            ProgressiveBlurView       |             BlurSwitchButtonView           |          BlurBottomNavigationView                 |
+|:-------------------------------:|:--------------------------------------------:|:---------------------------------------:|
+| <img src="/img/ProgressiveBlurView.jpg" alt="Image" style="border-radius: 10px;" /> | <img src="/img/BlurSwitchButton_true.jpg" alt="Image" style="border-radius: 14px;" /> | <img src="/img/BlurBottomNavigation.jpg" alt="Image" style="border-radius: 10px;" /> |
 
 ::: tip
 想要快速使用？请前往 [快速开始](./getting-started.md)。
@@ -27,3 +27,5 @@ next:
 QQ Group: <a href="https://qm.qq.com/q/LVWMNlHbUK" target="_blank">1054049593</a>
 
 Telegram: <a href="https://t.me/qmdeve" target="_blank">QmDeve</a>
+
+<AdUnit />

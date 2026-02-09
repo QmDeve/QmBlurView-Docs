@@ -42,7 +42,6 @@ const members = [
       { icon: 'gmail', link: 'mailto:donny@qmdeve.com' },
       { icon: 'telegram', link: 'https://t.me/donny_yale' },
       { icon: 'qq', link: 'https://qm.qq.com/q/l2ahC820iQ' },
-      { icon: 'twitter', link: 'https://x.com/qmdeve' }
     ]
   },
   {
@@ -61,12 +60,6 @@ const projects = [
     description: 'Android 仿 iOS 26 液体玻璃效果，AndroidLiquidGlassView 库具有真实的折射和色散效果',
     link: 'https://liquidglass.qmdeve.com',
     tags: ['Android Lib', 'LiquidGlass', 'iOS 26']
-  },
-  {
-    title: 'Qm Authenticator',
-    description: '一个为Android开发的开源、安全、离线的双因素身份验证（2FA）应用程序。它可以帮助您为您的在线帐户添加额外的安全层',
-    link: 'https://github.com/Rouneant/Qm-Authenticator-for-Android',
-    tags: ['Android', 'Security', 'Material Design 3']
   }
 ]
 </script>

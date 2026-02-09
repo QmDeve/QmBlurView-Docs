@@ -45,3 +45,5 @@ blurView.setCornerRadius(20);
 | `setOverlayColor(int)`    | Set overlay color |
 | `setCornerRadius(float)`  | Set corner radius |
 | `setDownsampleFactor(float)` | Set downsample factor |
+
+<AdUnit />
