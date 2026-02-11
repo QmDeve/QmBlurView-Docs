@@ -27,3 +27,9 @@ Just want to try it out? Go to [Getting Started](./getting-started.md).
 Telegram: <a href="https://t.me/qmdeve" target="_blank">QmDeve</a>
 
 QQ Group: <a href="https://qm.qq.com/q/LVWMNlHbUK" target="_blank">1054049593</a>
+
+---
+
+::: tip
+이 프로젝트나 저희를 후원하고 싶으시다면, 여기로 > <a href="./sponsor" target="_blank">후원하기</a>
+:::

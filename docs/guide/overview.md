@@ -28,4 +28,10 @@ Telegram: <a href="https://t.me/qmdeve" target="_blank">QmDeve</a>
 
 QQ Group: <a href="https://qm.qq.com/q/LVWMNlHbUK" target="_blank">1054049593</a>
 
+---
+
+::: tip
+if you want to sponsor this project or us, Please > <a href="./sponsor" target="_blank">Sponsor Us</a>
+:::
+
 <AdUnit />

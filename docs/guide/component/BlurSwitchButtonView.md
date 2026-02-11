@@ -9,13 +9,59 @@ next:
 
 # BlurSwitchButtonView
 
-### Used in XML layout
-```xml
+### Use Component
+::: code-group
+```xml [In Xml Layout]
 <com.qmdeve.blurview.widget.BlurSwitchButtonView
     android:layout_width="65dp"
     android:layout_height="wrap_content"
     app:baseColor="#0161F2" />
 ```
+
+```java [In Java]
+// Create BlurSwitchButtonView instance
+BlurSwitchButtonView blurSwitch = new BlurSwitchButtonView(context);
+
+// Set layout parameters
+FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
+    FrameLayout.LayoutParams.WRAP_CONTENT,
+    FrameLayout.LayoutParams.WRAP_CONTENT
+);
+blurSwitch.setLayoutParams(params);
+
+// Set attributes
+blurSwitch.setBaseColor(0xFF0161F2);
+
+// Add BlurSwitchButtonView to parent layout
+parentLayout.addView(blurSwitch);
+
+blurSwitch.setOnCheckedChangeListener(isChecked -> {
+    // Handle switch state change
+});
+```
+
+```kotlin [In Kotlin]
+// Create BlurSwitchButtonView instance
+val blurSwitch = BlurSwitchButtonView(context)
+
+// Set layout parameters
+val params = FrameLayout.LayoutParams(
+    FrameLayout.LayoutParams.WRAP_CONTENT,
+    FrameLayout.LayoutParams.WRAP_CONTENT
+)
+blurSwitch.layoutParams = params
+
+// Set attributes
+blurSwitch.setBaseColor(0xFF0161F2)
+
+// Add BlurSwitchButtonView to parent layout
+parentLayout.addView(blurSwitch)
+
+blurSwitch.setOnCheckedChangeListener { isChecked ->
+    // Handle switch state change
+}
+```
+:::
 
 ### Attribute Description
 | Attribute Name             | Type      | Default Value | Description                                          |
@@ -24,33 +70,6 @@ next:
 | `app:useSolidColorMode` | `boolean` | `false` | `-` |
 | `app:solidOnColor` | `color` | `-` | `-` |
 | `app:solidOffColor` | `color` | `-` | `-` |
-
-### Use the code
-```java
-BlurSwitchButtonView blurSwitch = findViewById(R.id.blurSwitch);
-
-// Callback on and off status
-blurSwitch.setOnCheckedChangeListener(is -> {
-    if (is) {
-        
-    }
-});
-
-// Set Base Color
-blurSwitch.setBaseColor(0xFF0161F2);
-
-// The first parameter sets the status, and the second parameter determines whether an animation is needed
-blurSwitch.setChecked(false, false);
-
-// Use the solid color mode
-blurSwitch.setUseSolidColorMode(true);
-
-// Is it in solid color mode
-blurSwitch.isUseSolidColorMode();
-
-// Set the color of the solid color mode
-blurSwitch.setSolidColors();
-```
 
 ::: warning
 **`BlurSwitchButtonView` You only need to set the Base Color, and it will automatically calculate the color of the on and off state**

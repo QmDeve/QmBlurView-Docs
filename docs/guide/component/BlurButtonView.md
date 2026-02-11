@@ -9,8 +9,10 @@ next:
 
 # BlurButtonView
 
-### Use in XML layout
-```xml
+### Use Component
+::: code-group
+
+```xml [In Xml Layout]
 <com.qmdeve.blurview.widget.BlurButtonView
     android:id="@+id/button"
     android:layout_width="wrap_content"
@@ -26,18 +28,42 @@ next:
     app:buttonIconTint="@color/black"/>
 ```
 
-### API Reference
-| Method | Description |
-|------|---|
-| `setText` | Set text |
-| `setButtonCornerRadius`     | Set button corner radius |
-| `setTextSize`               | Set text size |
-| `setTextColor`              | Set text color |
-| `setTextBold`               | Set text bold |
-| `setIcon` `setIconResource` | Set icon |
-| `setIconSize`               | Set icon size |
-| `setIconPadding`            | Set icon padding |
-| `setIconTint`               | Set icon tint |
+```java [In Java]
+// Create BlurButtonView instance
+BlurButtonView button = new BlurButtonView(context);
+
+// Set layout parameters
+FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
+    FrameLayout.LayoutParams.WRAP_CONTENT,
+    FrameLayout.LayoutParams.WRAP_CONTENT
+);
+button.setLayoutParams(params);
+
+// Set attributes
+button.setText("Button Text");
+
+// Add BlurButtonView to parent layout
+parentLayout.addView(button);
+```
+
+```kotlin [In Kotlin]
+// Create BlurButtonView instance
+val button = BlurButtonView(context)
+
+// Set layout parameters
+val params = FrameLayout.LayoutParams(
+    FrameLayout.LayoutParams.WRAP_CONTENT,
+    FrameLayout.LayoutParams.WRAP_CONTENT
+)
+button.layoutParams = params
+
+// Set attributes
+button.text = "Button Text"
+
+// Add BlurButtonView to parent layout
+parentLayout.addView(button)
+```
+:::
 
 ### Attribute Description
 
@@ -53,5 +79,18 @@ next:
 | `android:icon`                | - | Set icon |
 | `android:text`                | - | Set text |
 | `android:textSize`            | - | Set text size |
+
+### API Reference
+| Method | Description |
+|------|---|
+| `setText` | Set text |
+| `setButtonCornerRadius`     | Set button corner radius |
+| `setTextSize`               | Set text size |
+| `setTextColor`              | Set text color |
+| `setTextBold`               | Set text bold |
+| `setIcon` `setIconResource` | Set icon |
+| `setIconSize`               | Set icon size |
+| `setIconPadding`            | Set icon padding |
+| `setIconTint`               | Set icon tint |
 
 ---
