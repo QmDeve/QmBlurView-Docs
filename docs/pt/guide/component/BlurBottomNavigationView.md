@@ -1,5 +1,5 @@
 ---
-prev: 
+prev:
   text: 'Use BlurFloatingButtonView'
   link: './BlurFloatingButtonView'
 next: false
@@ -8,16 +8,19 @@ next: false
 # BlurBottomNavigationView
 
 ::: warning
-To use this view, make sure to integrate `navigation` Dependencies:
+Para usar esta visualização, certifique-se de integrar as dependências de `navigation`:
+
 ```groovy :no-line-numbers
 dependencies {
-    // BottomNavigationView Dependencies
+    // Dependência BottomNavigationView
     implementation '{{GROUP_ID}}:navigation:{{VERSION}}'
 }
 ```
+
 :::
 
-### Use in XML layout
+### Use na estrutura XML
+
 ```xml
 <com.qmdeve.blurview.widget.BlurBottomNavigationView
     android:id="@+id/bottomnav"
@@ -33,26 +36,28 @@ dependencies {
     android:layout_alignParentBottom="true" />
 ```
 
-### API Description
-| Method Name                | Description                 |
-|----------------------------|-----------------------------|
-| `bind(Object)`             | `Bind ViewPager or ViewPager2` |
-| `setMenu(int)`             |          `Set menu`          |
-| `setSelectedTab(int)`      | `Set selected tab`             |
-| `setSelectedColor(int)`    | `Set selected color`             |
-| `setUnselectedColor(int)`  | `Set unselected color`           |
-| `setIconSize(float)`         | `Set icon size`               |
-| `setTextSize(float)`         | `Set text size`               |
-| `setTextBold(boolean)`       | `Set text bold`           |
+### Referência da API
 
-### Attribute Description
-| Attribute Name              | Type       | Default Value      | Description |
-|---------------------------|------------|--------------------|-------------|
-|`app:navBlurRadius`          | `dimension`| `25dp`             | Set blur radius |
-|`app:navOverlayColor`        | `color`    | `#AAFFFFFF`        | Set overlay color |
-|`app:menu`                   | `reference`| `null`             | Set menu resource |
-|`app:navSelectedColor`       | `color`    | `BLUE`             | Set selected color |
-|`app:navUnselectedColor`     | `color`    | `GRAY`             | Set unselected color |
-|`app:item_iconSize`          | `dimension`| `24dp`             | Set icon size |
-|`app:item_textSize`          | `dimension`| `12dp`             | Set text size |
-|`app:item_textBold`          | `boolean`  | `false`            | Set text bold |
+| Method Name               | Descrição                              |
+| ------------------------- | -------------------------------------- |
+| `bind(Object)`            | Vincula ao `ViewPager` ou `ViewPagerN` |
+| `setMenu(int)`            | Define o menu                          |
+| `setSelectedTab(int)`     | Define a aba selecionada               |
+| `setSelectedColor(int)`   | Define a cor de selecionado            |
+| `setUnselectedColor(int)` | Define a cor de não selecionado        |
+| `setIconSize(float)`      | Define o tamanho do ícone              |
+| `setTextSize(float)`      | Define o tamanho do texto              |
+| `setTextBold(boolean)`    | Define o texto em negrito              |
+
+### Descrição dos Atributos
+
+| Nome do Atributo         | Tipo        | Valor padrão | Descrição                       |
+| ------------------------ | ----------- | ------------ | ------------------------------- |
+| `app:navBlurRadius`      | `dimension` | `25dp`       | Define o raio de desfoque       |
+| `app:navOverlayColor`    | `color`     | `#AAFFFFFF`  | Define a cor de sobreposição    |
+| `app:menu`               | `reference` | `null`       | Define o menu                   |
+| `app:navSelectedColor`   | `color`     | `BLUE`       | Define a cor de selecionado     |
+| `app:navUnselectedColor` | `color`     | `GRAY`       | Define a cor de não selecionado |
+| `app:item_iconSize`      | `dimension` | `24dp`       | Define o tamanho do ícone       |
+| `app:item_textSize`      | `dimension` | `12dp`       | Define o tamanho do texto       |
+| `app:item_textBold`      | `boolean`   | `false`      | Define o texto em negrito       |

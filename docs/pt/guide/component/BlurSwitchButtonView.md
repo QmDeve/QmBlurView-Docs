@@ -1,15 +1,16 @@
 ---
-prev: 
+prev:
   text: 'Use BlurTitlebarView'
   link: './BlurTitlebarView'
-next: 
+next:
   text: 'Use BlurFloatingButtonView'
   link: './BlurFloatingButtonView'
 ---
 
 # BlurSwitchButtonView
 
-### Used in XML layout
+### Use na estrutura XML
+
 ```xml
 <com.qmdeve.blurview.widget.BlurSwitchButtonView
     android:layout_width="65dp"
@@ -17,41 +18,43 @@ next:
     app:baseColor="#0161F2" />
 ```
 
-### Attribute Description
-| Attribute Name             | Type      | Default Value | Description                                          |
-|------------------------------|---------|-----|---------------------------------------------|
-| `app:baseColor` | `color` | `#0161F2` | Base Color (you only need to set one color value, and it will automatically calculate the color of `on` and `off` states) |
-| `app:useSolidColorMode` | `boolean` | `false` | `-` |
-| `app:solidOnColor` | `color` | `-` | `-` |
-| `app:solidOffColor` | `color` | `-` | `-` |
+### Descrição dos Atributos
 
-### Use the code
+| Nome do Atributo        | Tipo      | Valor padrão | Descrição                                                                                                      |
+| ----------------------- | --------- | ------------ | -------------------------------------------------------------------------------------------------------------- |
+| `app:baseColor`         | `color`   | `#0161F2`    | Cor base (basta definir um valor de cor e o programa calculará automaticamente a cor dos estados `on` e `off`) |
+| `app:useSolidColorMode` | `boolean` | `false`      | `-`                                                                                                            |
+| `app:solidOnColor`      | `color`   | `-`          | `-`                                                                                                            |
+| `app:solidOffColor`     | `color`   | `-`          | `-`                                                                                                            |
+
+### Use o código
+
 ```java
 BlurSwitchButtonView blurSwitch = findViewById(R.id.blurSwitch);
 
-// Callback on and off status
+// Função que observa os estados de on e off
 blurSwitch.setOnCheckedChangeListener(is -> {
     if (is) {
-        
+
     }
 });
 
-// Set Base Color
+// Define a cor base
 blurSwitch.setBaseColor(0xFF0161F2);
 
-// The first parameter sets the status, and the second parameter determines whether an animation is needed
+// O primeiro parâmetro define o estado e o segundo parâmetro determina se uma animação é necessária
 blurSwitch.setChecked(false, false);
 
-// Use the solid color mode
+// Use o modo de cor sólida
 blurSwitch.setUseSolidColorMode(true);
 
-// Is it in solid color mode
+// Está em modo de cor sólida?
 blurSwitch.isUseSolidColorMode();
 
-// Set the color of the solid color mode
+// Defina a cor do modo de cor sólida
 blurSwitch.setSolidColors();
 ```
 
 ::: warning
-**`BlurSwitchButtonView` You only need to set the Base Color, and it will automatically calculate the color of the on and off state**
+**`BlurSwitchButtonView` Basta definir a Cor Base e o programa calculará automaticamente a cor dos estados ligado e desligado**
 :::

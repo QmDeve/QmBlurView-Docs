@@ -1,6 +1,6 @@
 ---
 prev: false
-next: 
+next:
   text: 'Picasso'
   link: './picasso'
 ---
@@ -8,28 +8,32 @@ next:
 # Glide
 
 ::: warning
-Before using `Transform`, make sure you have integrated the Glide library.
+Antes de usar `Transform`, certifique-se de ter integrado a biblioteca Glide.
+
 ```groovy :no-line-numbers
 dependencies {
-    // QmBlurView Transform dependency
+    // Dependência de Transformação do QmBlurView
     implementation '{{GROUP_ID}}:transform:{{VERSION}}'
 
-    // Glide dependency
+    // Biblioteca Glide
     implementation 'com.github.bumptech.glide:glide:5.0.5'
 }
 ```
+
 :::
 
-### Import Class
+### Importe as Classes
+
 ```java :no-line-numbers
-// Glide main class
+// Importação da Biblioteca Picasso
 import com.bumptech.glide.Glide;
 
-// QmBlurView blur transformation class
+// Importação da Biblioteca do QmBlurView
 import com.qmdeve.blurview.transform.glide.BlurTransformation;
 ```
 
-### Usage Example
+### Exemplo de Uso
+
 ```java :no-line-numbers
 Glide.with(this)
     .load(R.drawable.image)
@@ -37,19 +41,20 @@ Glide.with(this)
            new CenterCrop(),
 
          /**
-          * Use blur transformation
-          * new BlurTransformation() // Default blur radius 25f, no rounded corners
-          * new BlurTransformation(float blurRadius) // Custom blur radius, no rounded corners
-          * new BlurTransformation(float blurRadius, float roundedCorners) // Custom blur radius and rounded corners
+          * Usando transformação de desfoque
+          * new BlurTransformation() // Por padrão o raio de desfoque é de 25f e sem os cantos arredondados
+          * new BlurTransformation(float blurRadius) // Raio de desfoque customizado e sem os cantos arredondados
+          * new BlurTransformation(float blurRadius, float roundedCorners) // Raio de desfoque e cantos arredondados customizados
           */
            new BlurTransformation(24f, 50)
        ))
     .into(imageView);
 ```
 
-### Constructors
-| Constructor                                 | Description               |
-|----------------------------------------|------------------|
-| `BlurTransformation()`                  | Creates a blur transformation with the default blur radius of 25f and no rounded corners |
-| `BlurTransformation(float blurRadius)`  | Creates a blur transformation with a custom blur radius and no rounded corners |
-| `BlurTransformation(float blurRadius, float roundedCorners)` | Creates a blur transformation with a custom blur radius and custom rounded corners |
+### Construtores
+
+| Construtor                                                   | Descrição                                                                                          |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| `BlurTransformation()`                                       | Cria uma transformação de desfoque com o raio de desfoque de `25f` e sem os cantos arredondados    |
+| `BlurTransformation(float blurRadius)`                       | Cria uma transformação de desfoque com o raio de desfoque customizado e sem os cantos arredondados |
+| `BlurTransformation(float blurRadius, float roundedCorners)` | Cria uma transformação de desfoque com o raio de desfoque e cantos arredondados customizados       |

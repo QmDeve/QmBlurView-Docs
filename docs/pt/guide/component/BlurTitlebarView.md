@@ -1,14 +1,16 @@
 ---
-prev: 
+prev:
   text: 'Use ProgressiveBlurView'
   link: './ProgressiveBlurView'
-next: 
+next:
   text: 'Use BlurSwitchButtonView'
   link: './BlurSwitchButtonView'
 ---
 
 # BlurTitlebarView
-### Use in XML layout
+
+### Use na estrutura XML
+
 ```xml
 <com.qmdeve.blurview.widget.BlurTitlebarView
     android:id="@+id/blurTitlebar1"
@@ -23,24 +25,25 @@ next:
     app:centerTitle="false"/>
 ```
 
-### Attribute Description
+### Descrição dos Atributos
 
-| Attribute Name               | Type       |
-|------------------------------|------------|
-| `app:titleText`              | `string`   |
-| `app:subtitleText`           | `string`   |
-| `app:titleTextColor`         | `color`    |
-| `app:subtitleTextColor`      | `color`    |
-| `app:showBack`               | `boolean`  |
-| `app:backIcon`               | `reference`|
-| `app:backIconTint`           | `color`    |
-| `app:menuText`               | `string`   |
-| `app:menuTextColor`          | `color`    |
-| `app:menuIcon`               | `reference`|
-| `app:menuIconTint`           | `color`    |
-| `app:centerTitle`            | `boolean`  |
+| Nome do Atributo        | Tipo        |
+| ----------------------- | ----------- |
+| `app:titleText`         | `string`    |
+| `app:subtitleText`      | `string`    |
+| `app:titleTextColor`    | `color`     |
+| `app:subtitleTextColor` | `color`     |
+| `app:showBack`          | `boolean`   |
+| `app:backIcon`          | `reference` |
+| `app:backIconTint`      | `color`     |
+| `app:menuText`          | `string`    |
+| `app:menuTextColor`     | `color`     |
+| `app:menuIcon`          | `reference` |
+| `app:menuIconTint`      | `color`     |
+| `app:centerTitle`       | `boolean`   |
 
-### Use code to dynamically switch the position of the title
+### Use o código para alternar dinamicamente a posição do título
+
 ```java
 blurTitlebarView.setCenterTitle(true);
 ```

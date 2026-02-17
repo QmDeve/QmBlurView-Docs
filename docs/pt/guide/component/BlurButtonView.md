@@ -1,15 +1,16 @@
 ---
-prev: 
+prev:
   text: 'Use BlurView'
   link: './BlurView'
-next: 
+next:
   text: 'Use ProgressiveBlurView'
   link: './ProgressiveBlurView'
 ---
 
 # BlurButtonView
 
-### Use in XML layout
+### Use na estrutura XML
+
 ```xml
 <com.qmdeve.blurview.widget.BlurButtonView
     android:id="@+id/button"
@@ -26,32 +27,33 @@ next:
     app:buttonIconTint="@color/black"/>
 ```
 
-### API Reference
-| Method | Description |
-|------|---|
-| `setText` | Set text |
-| `setButtonCornerRadius`     | Set button corner radius |
-| `setTextSize`               | Set text size |
-| `setTextColor`              | Set text color |
-| `setTextBold`               | Set text bold |
-| `setIcon` `setIconResource` | Set icon |
-| `setIconSize`               | Set icon size |
-| `setIconPadding`            | Set icon padding |
-| `setIconTint`               | Set icon tint |
+### Referência da API
 
-### Attribute Description
+| Método                         | Descrição                       |
+| ------------------------------ | ------------------------------- |
+| `setButtonCornerRadius`        | Define raio do canto do botão   |
+| `setIconPadding`               | Define o preenchimento do ícone |
+| `setIconSize`                  | Define o tamanho do ícone       |
+| `setIconTint`                  | Define a tonalidade do ícone    |
+| `setIcon` ou `setIconResource` | Define o próprio ícone          |
+| `setText`                      | Define o próprio texto          |
+| `setTextSize`                  | Define o tamanho do texto       |
+| `setTextColor`                 | Define a cor do texto           |
+| `setTextBold`                  | Define o texto em negrito       |
 
-| Attribute Name  | Type | Description |
-|-------------------------------|------|-------------|
-| `app:buttonCornerRadius`      | `dimension` | Set button corner radius |
-| `app:buttonIconPadding`       | `dimension` | Set icon padding |
-| `app:buttonIconSize`          | `dimension` | Set icon size |
-| `app:buttonTextBold`          | `boolean` | Set text bold |
-| `app:blurRadius`              | `dimension` | Set blur radius |
-| `app:overlayColor`            | `color` | Set overlay color |
-| `app:buttonIconTint`          | `color`| Set icon tint |
-| `android:icon`                | - | Set icon |
-| `android:text`                | - | Set text |
-| `android:textSize`            | - | Set text size |
+### Descrição dos Atributos
+
+| Nome do Atributo         | Tipo        | Descrição                       |
+| ------------------------ | ----------- | ------------------------------- |
+| `app:buttonCornerRadius` | `dimension` | Define raio do canto do botão   |
+| `app:buttonIconPadding`  | `dimension` | Define o preenchimento do ícone |
+| `app:buttonIconSize`     | `dimension` | Define o tamanho do ícone       |
+| `app:buttonTextBold`     | `boolean`   | Define o texto em negrito       |
+| `app:blurRadius`         | `dimension` | Define o raio de desfoque       |
+| `app:overlayColor`       | `color`     | Define a cor de sobreposição    |
+| `app:buttonIconTint`     | `color`     | Define a tonalidade do ícone    |
+| `android:icon`           | -           | Define o próprio ícone          |
+| `android:text`           | -           | Define o próprio texto          |
+| `android:textSize`       | -           | Define o tamanho do texto       |
 
 ---

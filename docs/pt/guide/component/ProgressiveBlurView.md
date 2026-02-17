@@ -1,14 +1,16 @@
 ---
-prev: 
+prev:
   text: 'Use BlurButtonView'
   link: './BlurButtonView'
-next: 
+next:
   text: 'Use BlurTitlebarView'
   link: './BlurTitlebarView'
 ---
 
 # ProgressiveBlurView
-### Use in XML layout
+
+### Use na estrutura XML
+
 ```xml
 <com.qmdeve.blurview.widget.ProgressiveBlurView
     android:layout_width="match_parent"
@@ -19,12 +21,13 @@ next:
     app:progressiveOverlayColor="#80FFFFFF" />
 ```
 
-### Attribute Description
-| Attribute Name                         | Type     |
-|------------------------------|------------|
-| `app:progressiveOverlayColor` | `color`    |
-| `app:progressiveDirection`    | `enum`     |
-| `app:progressiveLayers`       | `integer`  |
-| `app:progressiveBlurRadius`   | `dimension`|
+### Descrição dos Atributos
+
+| Nome do Atributo              | Tipo        |
+| ----------------------------- | ----------- |
+| `app:progressiveOverlayColor` | `color`     |
+| `app:progressiveDirection`    | `enum`      |
+| `app:progressiveLayers`       | `integer`   |
+| `app:progressiveBlurRadius`   | `dimension` |
 
 ---

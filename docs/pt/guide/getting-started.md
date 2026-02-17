@@ -1,52 +1,54 @@
 ---
-prev: 
-  text: 'Overview'
+prev:
+  text: 'Visão Geral'
   link: './overview'
-next: 
+next:
   text: 'Use BlurView'
   link: './component/BlurView'
 ---
 
-# Getting Started
+# Vamos Começar
 
-### Project Requirements
-|  Min SDK  | Compile SDK |  Java Version  |
-|-----------|-------------|----------------|
-| `API 21+` | `API 34+`      | `Java 11+` |
+### Obrigatoriedades do Projeto
 
-## Integration
+| SDK Mínimo | SDK Compilador | Versão do Java |
+| ---------- | -------------- | -------------- |
+| `API 21+`  | `API 34+`      | `Java 11+`     |
 
-### Adding Dependencies <Badge type="tip" text="v{{VERSION}}" />
+## Integração
 
-Add the dependency in the module's `build.gradle` file:
+### Adicionando dependêncies <Badge type="tip" text="v{{VERSION}}" />
+
+Adicione a dependência no arquivo `build.gradle`:
 
 ::: code-group
 
 ```groovy [build.gradle]
 dependencies {
-   // Core Library (Required)
+   // Núcleo da Biblioteca (Obrigatório)
    implementation '{{GROUP_ID}}:core:{{VERSION}}'
 
-   // Navigation Support (Optional)
+   // Suporte a Navegação (Opcional)
    implementation '{{GROUP_ID}}:navigation:{{VERSION}}'
 
-   // Image Loading Transformations (Optional - Glide/Picasso)
+   // Transformações de Carregamento de Imagem (Opcional - Glide/Picasso)
    implementation '{{GROUP_ID}}:transform:{{VERSION}}'
 }
 ```
 
 ```kotlin [build.gradle.kts]
 dependencies {
-   // Core Library (Required)
+   // Núcleo da Biblioteca (Obrigatório)
    implementation("{{GROUP_ID}}:core:{{VERSION}}")
 
-   // Navigation Support (Optional)
+   // Suporte a Navegação (Opcional)
    implementation("{{GROUP_ID}}:navigation:{{VERSION}}")
 
-   // Image Loading Transformations (Optional - Glide/Picasso)
+   // Transformações de Carregamento de Imagem (Opcional - Glide/Picasso)
    implementation("{{GROUP_ID}}:transform:{{VERSION}}")
 }
 ```
+
 :::
 
 <AdUnit />

@@ -1,26 +1,27 @@
 ---
 prev:
-  text: 'Getting Started'
+  text: 'Vamos Começar'
   link: '../getting-started'
-next: 
+next:
   text: 'Use BlurButtonView'
   link: './BlurButtonView'
 ---
 
 # BlurView
 
-#### Use in XML layout
+### Use na estrutura XML
+
 ```xml
 <com.qmdeve.blurview.widget.BlurView
     android:id="@+id/blurView"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     app:blurRadius="20dp"
-    app:overlayColor="#66FFFFFF" 
+    app:overlayColor="#66FFFFFF"
     app:cornerRadius="24dp"/>
 ```
 
-#### Use code to set view properties
+### Use o código para definir as propriedades
 
 ```java
 BlurView blurView = findViewById(R.id.blurView);
@@ -29,19 +30,20 @@ blurView.setOverlayColor(0x66FFFFFF);
 blurView.setCornerRadius(20);
 ```
 
-#### Attribute Description
+### Referência da API
 
-| Attribute Name         | Type | Default value | Explanation |
-|------------------------|------|--------|-------------|
-| `app:blurRadius`       | `dimension` | `10` | Blur radius |
-| `app:overlayColor`     | `color` | `#AAFFFFFF` | Overlay color |
-| `app:cornerRadius`     | `dimension` | `0` | Corner radius of the view |
-| `app:setDownsampleFactor` | `float` | `0` | Downsample factor, higher value means better performance but worse blur effect |
+| Método                       | Descrição                       |
+| ---------------------------- | ------------------------------- |
+| `setBlurRadius(float)`       | Define o raio de desfoque       |
+| `setOverlayColor(int)`       | Define a cor de sobreposição    |
+| `setCornerRadius(float)`     | Define o raio de curva          |
+| `setDownsampleFactor(float)` | Define o fator de subamostragem |
 
-### API Reference
-| Method Name               | Description       |
-|--------------------------|------------------|
-| `setBlurRadius(float)`    | Set blur radius   |
-| `setOverlayColor(int)`    | Set overlay color |
-| `setCornerRadius(float)`  | Set corner radius |
-| `setDownsampleFactor(float)` | Set downsample factor |
+### Descrição dos Atributos
+
+| Nome do Atributo          | Tipo        | Valor padrão | Descrição                                                                                                    |
+| ------------------------- | ----------- | ------------ | ------------------------------------------------------------------------------------------------------------ |
+| `app:blurRadius`          | `dimension` | `10`         | Define o raio de desfoque                                                                                    |
+| `app:overlayColor`        | `color`     | `#AAFFFFFF`  | Define a cor de sobreposição                                                                                 |
+| `app:cornerRadius`        | `dimension` | `0`          | Define o raio de curva da vista                                                                              |
+| `app:setDownsampleFactor` | `float`     | `0`          | Define o fator de subamostragem, um valor mais alto significa melhor desempenho, mas pior efeito de desfoque |
