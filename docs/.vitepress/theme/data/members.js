@@ -1,14 +1,14 @@
 export default [
   {
     avatar: '/img/donny_yale.jpg',
-    name: 'Donny Yale',
+    name: 'Donny Yang',
     title: 'Creator',
     org: 'qmdeve.com',
     orgLink: 'https://qmdeve.com',
     links: [
       { icon: 'github', link: 'https://github.com/QmDeve' },
       { icon: 'gmail', link: 'mailto:donny@qmdeve.com' },
-      { icon: 'telegram', link: 'https://t.me/donny_yale' }
+      { icon: 'telegram', link: 'https://t.me/donny_yang' }
     ]
   },
   {
