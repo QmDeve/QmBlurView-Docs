@@ -1,6 +1,6 @@
 export default [
   {
-    avatar: '/img/donny_yale.jpg',
+    avatar: 'https://github.com/QmDeve.png',
     name: 'Donny Yang',
     title: 'Creator',
     org: 'qmdeve.com',

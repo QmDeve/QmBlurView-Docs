@@ -44,7 +44,7 @@ QQ Groups: <a href="https://qm.qq.com/q/vnofi1hgFc" target="_blank">1046829337</
 ## Licença
 
 ```
-Copyright ©️ 2025-2026 Donny Yale
+Copyright ©️ 2025-2026 Donny Yang
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para utilizar o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, bem como permitir que pessoas a quem o Software seja fornecido façam o mesmo, sujeitando-se às seguintes condições:
 
