@@ -11,6 +11,5 @@ editLink: false
 ### スポンサー方法
 - USDT: `TCLcHwAfmKYkME39W5sFNRFodWnt22ChT6`
 - Bitcoin: `bc1qacte9qyuhja7p8ymhpl48cu99xkvm2xvwmng8p`
-- Alipay: [支払いへ](https://qr.alipay.com/fkx16196p5xjsibafmkmy21)
 
 ご支援ありがとうございます！

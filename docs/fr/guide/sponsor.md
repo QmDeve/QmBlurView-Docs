@@ -11,6 +11,5 @@ Si vous trouvez ce projet utile et souhaitez soutenir son développement, vous p
 ### Façons de Sponsoriser
 - USDT: `TCLcHwAfmKYkME39W5sFNRFodWnt22ChT6`
 - Bitcoin: `bc1qacte9qyuhja7p8ymhpl48cu99xkvm2xvwmng8p`
-- Alipay: [Aller au paiement](https://qr.alipay.com/fkx16196p5xjsibafmkmy21)
 
 Merci pour votre soutien !

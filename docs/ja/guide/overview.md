@@ -26,12 +26,8 @@ Just want to try it out? Go to [Getting Started](./getting-started.md).
 ## Discuss Groups
 Telegram: <a href="https://t.me/qmdeve" target="_blank">QmDeve</a>
 
-QQ Group: <a href="https://qm.qq.com/q/LVWMNlHbUK" target="_blank">1054049593</a>
-
 ---
 
 ::: tip
 このプロジェクトや私たちをスポンサーしたい場合は、こちらへ > <a href="./sponsor" target="_blank">スポンサーになる</a>
 :::
-
-<AdUnit />

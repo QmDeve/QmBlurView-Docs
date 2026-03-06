@@ -12,6 +12,5 @@ Se você acha este projeto útil e deseja apoiar seu desenvolvimento, pode nos p
 
 - USDT: `TCLcHwAfmKYkME39W5sFNRFodWnt22ChT6`
 - Bitcoin: `bc1qacte9qyuhja7p8ymhpl48cu99xkvm2xvwmng8p`
-- Alipay: [Ir para pagamento](https://qr.alipay.com/fkx16196p5xjsibafmkmy21)
 
 Obrigado pelo seu apoio!
