@@ -24,9 +24,7 @@ next:
 :::
 
 ## 交流群
-QQ Groups: <a href="https://qm.qq.com/q/vnofi1hgFc" target="_blank">1046829337</a>
-
-QQ Groups: <a href="https://qm.qq.com/q/LVWMNlHbUK" target="_blank">1054049593</a>
+QQ 群: <a href="https://qm.qq.com/q/vnofi1hgFc" target="_blank">1046829337</a>
 
 Telegram: <a href="https://t.me/qmdeve" target="_blank">QmDeve</a>
 
