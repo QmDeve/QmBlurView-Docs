@@ -33,7 +33,7 @@ features:
 
 ## Star History
 
-[![Star History](https://starchart.qmdeve.com/QmDeve/QmBlurView.svg?variant=adaptive)](https://starchart.qmdeve.com/QmDeve/QmBlurView)
+[![Star History](https://starchart.cc/QmDeve/QmBlurView.svg?variant=adaptive)](https://starchart.cc/QmDeve/QmBlurView)
 
 ## Сообщество
 

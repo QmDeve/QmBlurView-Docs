@@ -31,7 +31,7 @@ features:
 
 ## Histórico de Estrelas
 
-[![Histórico de Estrelas](https://starchart.qmdeve.com/QmDeve/QmBlurView.svg?variant=adaptive)](https://starchart.qmdeve.com/QmDeve/QmBlurView)
+[![Star History](https://starchart.cc/QmDeve/QmBlurView.svg?variant=adaptive)](https://starchart.cc/QmDeve/QmBlurView)
 
 ## Grupos de Discussão
 
