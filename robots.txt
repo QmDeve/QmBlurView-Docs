@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blurview.qmdeve.com/sitemap.xml
