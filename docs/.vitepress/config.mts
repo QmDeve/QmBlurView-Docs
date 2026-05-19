@@ -23,7 +23,7 @@ export default defineConfig({
         let content = tokens[idx].content
 
         content = content
-          .replace(/{{VERSION}}/g, '1.1.4')
+          .replace(/{{VERSION}}/g, '1.1.5')
           .replace(/{{GROUP_ID}}/g, 'com.qmdeve.blurview')
 
         tokens[idx].content = content
@@ -36,7 +36,7 @@ export default defineConfig({
         tokens.forEach(token => {
           if (token.content) {
             token.content = token.content
-              .replace(/{{VERSION}}/g, '1.1.4')
+              .replace(/{{VERSION}}/g, '1.1.5')
               .replace(/{{GROUP_ID}}/g, 'com.qmdeve.blurview')
           }
         })
