@@ -33,12 +33,6 @@ features:
 
 [![Star History](https://starchart.cc/QmDeve/QmBlurView.svg?variant=adaptive)](https://starchart.cc/QmDeve/QmBlurView)
 
-## 交流群
-
-QQ 群: <a href="https://qm.qq.com/q/vnofi1hgFc" target="_blank">1046829337</a>
-
-Telegram: <a href="https://t.me/qmdeve" target="_blank">QmDeve</a>
-
 ## 开源许可证
 
 ```
@@ -62,8 +56,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-
-## 其他项目
-
-<Projects />
