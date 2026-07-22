@@ -12,11 +12,11 @@ next:
 ### Project Requirements
 |  Min SDK  | Compile SDK |  Java Version  |
 |-----------|-------------|----------------|
-| `API 21+` | `API 36+`      | `Java 11+` |
+| `API 21+` | `API 37+`      | `Java 11+` |
 
 ## Integration
 
-### Adding Dependencies <Badge type="tip" text="v1.2.0" />
+### Adding Dependencies <Badge type="tip" text="v1.3.0" />
 
 Add the dependency in the module's `build.gradle` file:
 
@@ -25,26 +25,26 @@ Add the dependency in the module's `build.gradle` file:
 ```groovy [build.gradle]
 dependencies {
    // Core Library (Required)
-   implementation 'com.qmdeve.blurview:core:1.2.0'
+   implementation 'com.qmdeve.blurview:core:1.3.0'
 
    // Navigation Support (Optional)
-   implementation 'com.qmdeve.blurview:navigation:1.2.0'
+   implementation 'com.qmdeve.blurview:navigation:1.3.0'
 
    // Image Loading Transformations (Optional - Glide/Picasso)
-   implementation 'com.qmdeve.blurview:transform:1.2.0'
+   implementation 'com.qmdeve.blurview:transform:1.3.0'
 }
 ```
 
 ```kotlin [build.gradle.kts]
 dependencies {
    // Core Library (Required)
-   implementation("com.qmdeve.blurview:core:1.2.0")
+   implementation("com.qmdeve.blurview:core:1.3.0")
 
    // Navigation Support (Optional)
-   implementation("com.qmdeve.blurview:navigation:1.2.0")
+   implementation("com.qmdeve.blurview:navigation:1.3.0")
 
    // Image Loading Transformations (Optional - Glide/Picasso)
-   implementation("com.qmdeve.blurview:transform:1.2.0")
+   implementation("com.qmdeve.blurview:transform:1.3.0")
 }
 ```
 :::
