@@ -20,7 +20,12 @@ GitHub: [QmDeve/QmBlurView](https://github.com/QmDeve/QmBlurView)
 
 ---
 
-### 2026-06-07 <Badge type="tip" text="v1.2.0" /> <Badge type="tip" text="Latest Version" />
+### 2026-07-22 <Badge type="tip" text="v1.3.0" /> <Badge type="tip" text="Latest Version" />
+- Performance optimization: Significantly improved the rendering smoothness of blur and reduced
+
+---
+
+### 2026-06-07 <Badge type="tip" text="v1.2.0" />
 - Add `ProgressiveBlurViewGroup` Component
 - Minor refactoring in `BlurViewGroup` to avoid redrawing
 
