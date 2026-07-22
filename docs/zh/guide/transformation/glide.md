@@ -12,7 +12,7 @@ next:
 ```groovy
 dependencies {
     // QmBlurView Transform dependency
-    implementation 'com.qmdeve.blurview:transform:1.2.0'
+    implementation 'com.qmdeve.blurview:transform:1.3.0'
 
     // Glide dependency
     implementation 'com.github.bumptech.glide:glide:5.0.7'
