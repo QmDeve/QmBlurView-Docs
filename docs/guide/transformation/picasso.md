@@ -12,7 +12,7 @@ Before using `Transform`, make sure you have integrated the Picasso library.
 ```groovy :no-line-numbers
 dependencies {
     // QmBlurView Transform dependency
-    implementation 'com.qmdeve.blurview:transform:1.2.0'
+    implementation 'com.qmdeve.blurview:transform:1.3.0'
 
     // Picasso dependency
     implementation 'com.squareup.picasso:picasso:2.8'
