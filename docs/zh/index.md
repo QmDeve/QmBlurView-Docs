@@ -29,10 +29,6 @@ features:
 
 <Developers size="small" />
 
-## Star History
-
-[![Star History](https://starchart.cc/QmDeve/QmBlurView.svg?variant=adaptive)](https://starchart.cc/QmDeve/QmBlurView)
-
 ## 开源许可证
 
 ```
