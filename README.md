@@ -6,7 +6,7 @@
 
 To view the document, please visit:
 
-- [English Version](https://blurview.qmdeve.com)
+- [English](https://blurview.qmdeve.com)
 - [简体中文](https://blurview.qmdeve.com/zh/)
 
 ## GitHub
