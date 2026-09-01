@@ -14,9 +14,6 @@ hero:
     - theme: mimicry
       text: View on GitHub
       link: https://github.com/QmDeve/QmBlurView
-    - theme: mimicry
-      text: Download Demo
-      link: https://github.com/QmDeve/QmBlurView/blob/master/app/release/app-release.apk?raw=true
 
 features:
   - title: High Performance
