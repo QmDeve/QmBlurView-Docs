@@ -1,84 +1,85 @@
 ---
-prev: 
-  text: 'Use ProgressiveBlurView'
-  link: './ProgressiveBlurView'
-next: 
+prev:
+  text: 'Use ProgressiveBlurViewGroup'
+  link: './ProgressiveBlurViewGroup'
+next:
   text: 'Use BlurSwitchButtonView'
   link: './BlurSwitchButtonView'
 ---
 
 # BlurTitlebarView
+
 ### Use Component
+
 ::: code-group
 
 ```xml [In Xml Layout]
 <com.qmdeve.blurview.widget.BlurTitlebarView
-    android:id="@+id/blurTitlebar1"
+    android:id="@+id/blurTitlebar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:blurRadius="25dp"
     app:overlayColor="#D1FFFFFF"
-    app:blurRadius="30dp"
+    app:titleText="Title"
+    app:subtitleText="Subtitle"
     app:showBack="true"
-    app:menuIcon="?android:attr/actionModeWebSearchDrawable"
-    app:titleText="Title Test"
-    app:subtitleText="Subheading Test"
-    app:centerTitle="false"/>
+    app:menuText="Edit"
+    app:centerTitle="false" />
 ```
 
 ```java [In Java]
-// Create BlurTitlebarView instance
-BlurTitlebarView blurTitlebarView = new BlurTitlebarView(context);
-
-// Set layout parameters
-FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
-    FrameLayout.LayoutParams.MATCH_PARENT,
-    FrameLayout.LayoutParams.WRAP_CONTENT
-);
-blurTitlebarView.setLayoutParams(params);
-
-// Set attributes
-blurTitlebarView.setTitleText("Title Text");
-blurTitlebarView.setSubtitleText("Subtitle Text");
-//...
-
-// Add BlurTitlebarView to parent layout
-parentLayout.addView(blurTitlebarView);
+BlurTitlebarView titlebar = new BlurTitlebarView(context);
+titlebar.setTitle("Title");
+titlebar.setSubtitle("Subtitle");
+titlebar.setShowBack(true);
+titlebar.setMenuText("Edit");
+titlebar.setCenterTitle(true);
 ```
 
 ```kotlin [In Kotlin]
-// Create BlurTitlebarView instance
-val blurTitlebarView = BlurTitlebarView(context)
-
-// Set layout parameters
-val params = FrameLayout.LayoutParams(
-    FrameLayout.LayoutParams.MATCH_PARENT,
-    FrameLayout.LayoutParams.WRAP_CONTENT
-)
-blurTitlebarView.layoutParams = params
-
-// Set attributes
-blurTitlebarView.setTitleText("Title Text")
-blurTitlebarView.setSubtitleText("Subtitle Text")
-//...
-
-// Add BlurTitlebarView to parent layout
-parentLayout.addView(blurTitlebarView)
+val titlebar = BlurTitlebarView(context)
+titlebar.setTitle("Title")
+titlebar.setSubtitle("Subtitle")
+titlebar.setShowBack(true)
+titlebar.setMenuText("Edit")
+titlebar.setCenterTitle(true)
 ```
+
 :::
 
 ### Attribute Description
 
-| Attribute Name               | Type       |
-|------------------------------|------------|
-| `app:titleText`              | `string`   |
-| `app:subtitleText`           | `string`   |
-| `app:titleTextColor`         | `color`    |
-| `app:subtitleTextColor`      | `color`    |
-| `app:showBack`               | `boolean`  |
-| `app:backIcon`               | `reference`|
-| `app:backIconTint`           | `color`    |
-| `app:menuText`               | `string`   |
-| `app:menuTextColor`          | `color`    |
-| `app:menuIcon`               | `reference`|
-| `app:menuIconTint`           | `color`    |
-| `app:centerTitle`            | `boolean`  |
+| Attribute Name          | Type        | Default Value | Description                                                         |
+| ----------------------- | ----------- | ------------- | ------------------------------------------------------------------- |
+| `app:titleText`         | `string`    | `null`        | Title text.                                                         |
+| `app:subtitleText`      | `string`    | `null`        | Subtitle text.                                                      |
+| `app:titleTextColor`    | `color`     | `transparent` | Title text color. Auto-calculated from overlay when transparent.    |
+| `app:subtitleTextColor` | `color`     | `transparent` | Subtitle text color. Auto-calculated from overlay when transparent. |
+| `app:showBack`          | `boolean`   | `false`       | Whether to show the back area/icon.                                 |
+| `app:backIcon`          | `reference` | `null`        | Back icon drawable resource.                                        |
+| `app:backIconTint`      | `color`     | `transparent` | Back icon tint. Auto-calculated from overlay when transparent.      |
+| `app:menuText`          | `string`    | `null`        | Right-side menu text.                                               |
+| `app:menuTextColor`     | `color`     | `transparent` | Menu text color. Auto-calculated from overlay when transparent.     |
+| `app:menuIcon`          | `reference` | `null`        | Right-side menu icon drawable resource.                             |
+| `app:menuIconTint`      | `color`     | `transparent` | Menu icon tint. Auto-calculated from overlay when transparent.      |
+| `app:centerTitle`       | `boolean`   | `false`       | Animate title/subtitle to centered mode.                            |
+| `app:blurRadius`        | `dimension` | `25dp`        | Inherited blur radius from `BlurView`.                              |
+| `app:overlayColor`      | `color`     | `#AAFFFFFF`   | Inherited overlay color from `BlurView`.                            |
+
+### API Reference
+
+| Method                                        | Description                                          |
+| --------------------------------------------- | ---------------------------------------------------- |
+| `setCenterTitle(boolean)`                     | Animate title/subtitle alignment to center or start. |
+| `setTitle(String)`                            | Set title text.                                      |
+| `setSubtitle(String)`                         | Set subtitle text.                                   |
+| `setShowBack(boolean)`                        | Show or hide back area.                              |
+| `setBackIcon(Drawable)`                       | Set back icon drawable.                              |
+| `setBackIconTint(int)`                        | Set back icon tint color.                            |
+| `setMenuText(String)`                         | Set right-side menu text.                            |
+| `setMenuIcon(Drawable)`                       | Set right-side menu icon drawable.                   |
+| `setMenuIconTint(int)`                        | Set right-side menu icon tint color.                 |
+| `setOnBackClickListener(OnBackClickListener)` | Set back click callback.                             |
+| `setOnMenuClickListener(OnMenuClickListener)` | Set menu click callback.                             |
+| `setBlurRadius(float)`                        | Inherited blur radius API from `BlurView`.           |
+| `setOverlayColor(int)`                        | Inherited overlay color API from `BlurView`.         |

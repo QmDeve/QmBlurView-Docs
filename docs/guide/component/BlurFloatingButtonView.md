@@ -10,56 +10,63 @@ next:
 # BlurFloatingButtonView
 
 ### Use Component
+
 ::: code-group
+
 ```xml [In Xml Layout]
-<com.qmdeve.blurview.widget.BlurFloatingButtonView 
+<com.qmdeve.blurview.widget.BlurFloatingButtonView
     android:id="@+id/blurFloatingButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 ```
 
 ```java [In Java]
-// Create BlurFloatingButtonView instance
-BlurFloatingButtonView floatingButtonView = new BlurFloatingButtonView(context);
-
-// Set layout parameters
-FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
-    FrameLayout.LayoutParams.WRAP_CONTENT,
-    FrameLayout.LayoutParams.WRAP_CONTENT
-);
-floatingButtonView.setLayoutParams(params);
-
-// Add BlurFloatingButtonView to parent layout
-parentLayout.addView(floatingButtonView);
+BlurFloatingButtonView fab = new BlurFloatingButtonView(context);
+fab.setPosition(BlurFloatingButtonView.POSITION_RIGHT);
+fab.setIcon(R.drawable.ic_add);
+fab.setIconTint(0xFF333333);
+fab.setButtonSize(55f);
+fab.setOnLongPressListener(view -> {
+    // Handle long press
+});
 ```
 
 ```kotlin [In Kotlin]
-// Create BlurFloatingButtonView instance
-val floatingButtonView = BlurFloatingButtonView(context)
-
-// Set layout parameters
-val params = FrameLayout.LayoutParams(
-    FrameLayout.LayoutParams.WRAP_CONTENT,
-    FrameLayout.LayoutParams.WRAP_CONTENT
-)
-floatingButtonView.layoutParams = params
-
-// Add BlurFloatingButtonView to parent layout
-parentLayout.addView(floatingButtonView)
+val fab = BlurFloatingButtonView(context)
+fab.setPosition(BlurFloatingButtonView.POSITION_RIGHT)
+fab.setIcon(R.drawable.ic_add)
+fab.setIconTint(0xFF333333.toInt())
+fab.setButtonSize(55f)
+fab.setOnLongPressListener {
+    // Handle long press
+}
 ```
+
 :::
 
-### API Reference
-| Method | Description |
-|------|---|
-| `setOnClickListener` | Set click listener |
-| `setOnLongPressListener` | Set long press listener |
-| `setPosition` | Set button position |
-| `setIcon` | Set button icon |
-| `setIconTint` | Set icon tint |
-| `setIconSize` | Set icon size |
-| `setButtonSize` | Set button size |
-| `setOverlayColor` | Set overlay color |
-| `setCornerRadius` | Set button corner radius |
+### Default Properties
 
----
+| Property      | Default               |
+| ------------- | --------------------- |
+| Position      | `POSITION_RIGHT`      |
+| Button size   | `55dp`                |
+| Icon size     | `30dp`                |
+| Icon tint     | `#FF333333`           |
+| Corner radius | `12dp`                |
+| Blur radius   | `16dp`                |
+| Overlay color | White with ~72% alpha |
+
+### API Reference
+
+| Method                                        | Description                                                      |
+| --------------------------------------------- | ---------------------------------------------------------------- |
+| `setPosition(int)`                            | Set horizontal anchor using `POSITION_LEFT` or `POSITION_RIGHT`. |
+| `setIcon(@DrawableRes int)`                   | Set icon from drawable resource ID.                              |
+| `setIconDrawable(Drawable)`                   | Set icon drawable directly.                                      |
+| `setIconTint(int)`                            | Set icon tint color (internally uses 80% alpha).                 |
+| `setIconSize(float)`                          | Set icon size in dp.                                             |
+| `setButtonSize(float)`                        | Set button size in dp.                                           |
+| `setCornerRadius(float)`                      | Set corner radius and update ripple mask.                        |
+| `setOverlayColor(int)`                        | Set overlay color (internally clamped to 72% alpha).             |
+| `setOnLongPressListener(OnLongPressListener)` | Set long press callback.                                         |
+| `setOnClickListener(View.OnClickListener)`    | Set click callback (inherited from `View`).                      |
